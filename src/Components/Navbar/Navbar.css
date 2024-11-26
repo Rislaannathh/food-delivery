@@ -1,0 +1,145 @@
+:root{
+    --PrimaryColor: hsl(199,100%,33%);
+    --SecondaryColor:hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyText:rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,240);
+    --cardBg:rgb(235,235,235);
+}
+.navbarsection{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+    
+    
+    }
+.hlogo{
+    color: rgb(255, 85, 0);
+    font-size: 30px;
+    font-weight: 800;
+}
+.icon{
+    transform: translateY(5px);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #49557e;
+
+}
+.navbar-right .icon{
+    margin-bottom: .7rem;
+}
+.navbarsection button{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.navbarsection button:hover{
+    background-color: rgb(243, 183, 159);
+    color: white;
+}
+/* underline li items */
+.navbarsection .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+.navbarsection li{
+    cursor: pointer;
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -4px;
+    right: -8px;
+
+}
+
+.navbar-menu a:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #36426b;
+
+}
+.navbar-search-icon img{
+    width: 20px;
+}
+@media screen and (max-width:1050px){
+    .hlogo{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+       }
+       .navbar-right{
+        gap: 30px;
+       }
+       .navbar-right .icon{
+        width: 22px;
+       }
+       .navbar-right button{
+        padding: 8px 25px;
+       }
+}
+@media (max-width:900px){
+    .hlogo{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+       }
+       .navbar-right{
+        gap: 20px;
+       }
+       .navbar-right .icon{
+        width: 20px;
+       }
+       .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+       }
+}
+@media (max-width:750px){
+    .navbar-menu{
+        display: none;
+    }
+   
+}
